@@ -1,0 +1,193 @@
+/*------------------- 5.1 Contact -------------------*/
+.contact-address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .item-address {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 25px 30px;
+    border-radius: $border_radius;
+    box-shadow: 0 8px 35px 0 rgba(53, 53, 53, 0.13);
+    margin-right: 30px;
+
+    @media screen and (min-width: 992px) {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      margin-right: 0;
+    }
+    .item-icon {
+      position: relative;
+      width: 76px;
+      height: 76px;
+      border: 1px solid #e1e1e1;
+      border-radius: 50%;
+      padding: 10px;
+      margin-right: 20px;
+      text-align: center;
+      line-height: 57px;
+      &:after {
+        content: "";
+        width: 61px;
+        height: 61px;
+        border: 1px solid #e1e1e1;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+      }
+      i {
+        background-color: $color_primary;
+        color: $color_light;
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 48px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .item-content {
+      flex: 1;
+      .item-title {
+        font-size: 22px;
+        line-height: 30px;
+        color: $color_dark;
+        margin-bottom: 5px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+    &:hover {
+      .item-icon {
+        i {
+          background-color: $color_secondary;
+        }
+      }
+    }
+  }
+}
+
+.contact-form-box {
+  padding: 60px 60px 70px;
+  .heading-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .textarea {
+      margin-bottom: 25px;
+      height: 110px;
+    }
+  }
+  .form-control {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #cbcbcb;
+  }
+  input {
+    height: 60px;
+  }
+  .submit-btn {
+    width: auto;
+    padding: 15px 40px;
+  }
+}
+.fluentform {
+  .fluent_form_1 {
+    .ff-el-group {
+      margin-bottom: 15px;
+      .ff-el-form-control {
+        border: none;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: #f6f6f6;
+        height: auto;
+        color: #111111;
+        border-radius: $border_radius;
+        &:focus {
+          outline: 0;
+          box-shadow: none;
+          background-color: #f6f6f6;
+        }
+      }
+      .ff-btn-submit {
+        border: none;
+        border-radius: $border_radius;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+        height: 60px;
+        padding: 12px 35px 10px;
+        background-color: #0070e0;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: #1a7cfa;
+        }
+      }
+    }
+    .ff-t-cell {
+      @media screen and (min-width: 768px) {
+        padding: 0 7.5px;
+      }
+    }
+  }
+}
+
+.contacts-info {
+  ul {
+    li {
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 20px;
+      & span {
+        color: #acacac;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: $font_primary;
+        margin-bottom: 6px;
+        display: block;
+      }
+      & p {
+        color: #111111;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: $font_body;
+      }
+      &:last-child {
+        padding-bottom: 0px;
+        border-bottom: 1px solid transparent;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.map-bg {
+  min-height: 420px;
+}

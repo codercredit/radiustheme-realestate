@@ -1,0 +1,44 @@
+.why-chose-block {
+  padding: 40px 49px 30px 55px;
+  background: #fff;
+  border-radius: 6px;
+  @include transition();
+  @include respond-below(xs) {
+    padding: 15px;
+  }
+  &:hover {
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.13);
+    @include transition();
+    .item-icon {
+      i {
+        &::before {
+          color: $color_secondary;
+          @include transition();
+        }
+      }
+    }
+  }
+  .item-icon {
+    margin-right: 35px;
+    @include respond-below(xs) {
+      margin-right: 14px;
+    }
+    i {
+      &::before {
+        font-size: 59px;
+        color: #cccccc;
+        @include transition();
+      }
+    }
+  }
+  .item-content {
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000000;
+    }
+    p {
+      color: #646464;
+    }
+  }
+}

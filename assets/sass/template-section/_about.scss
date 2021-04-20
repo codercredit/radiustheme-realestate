@@ -1,0 +1,139 @@
+/*------------------- 5.1 About -------------------*/
+.about-us {
+  padding: 95px 0;
+  .about-content {
+    padding-right: 50px;
+    .item-title {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 14px;
+    }
+    .item-subtitle {
+      font-size: 18px;
+      color: $color_black;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.about-img {
+  position: relative;
+  display: inline-block;
+  img {
+    border-radius: $border_radius;
+  }
+  .company-start {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $color_primary;
+    border-radius: 0 0 4px 4px;
+    color: $color_light;
+    padding: 70px 35px 28px;
+    clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+    .item-title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .item-subtitle {
+      font-size: 18px;
+      font-style: italic;
+    }
+  }
+}
+
+/*------------------- 5.6 Breadcrumb -------------------*/
+.breadcrumb-box .page-title {
+  color: #fff;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1199px) {
+  .breadcrumb-box .page-title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .breadcrumb-box .page-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .breadcrumb-box .page-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+.breadcrumb-box .breadcrumb {
+  background-color: transparent;
+  padding: 0px;
+  margin-bottom: 0;
+}
+.breadcrumb-box .breadcrumb .breadcrumb-item {
+  font-size: 14px;
+  position: relative;
+  font-weight: 500;
+}
+.breadcrumb-wrap {
+  padding: 60px 0;
+}
+.breadcrumb-box .breadcrumb .breadcrumb-item:last-child {
+  margin-right: 0;
+}
+.breadcrumb-box .breadcrumb .breadcrumb-item:after {
+  content: "-";
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+}
+@media only screen and (max-width: 479px) {
+  .breadcrumb-box .breadcrumb .breadcrumb-item:after {
+    padding-left: 7px;
+  }
+}
+.breadcrumb-box .breadcrumb .breadcrumb-item:before {
+  display: none;
+}
+.breadcrumb-box .breadcrumb .breadcrumb-item:last-child:after {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .breadcrumb-box .breadcrumb .breadcrumb-item {
+    padding-left: 5px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .breadcrumb-box .breadcrumb .breadcrumb-item {
+    padding-left: 3px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .breadcrumb-box .breadcrumb .breadcrumb-item {
+    padding-left: 0;
+  }
+}
+.breadcrumb-box .breadcrumb .breadcrumb-item a {
+  color: #646464;
+  transition: all 0.3s ease-in-out;
+  padding-right: 14px;
+}
+.breadcrumb-box .breadcrumb .breadcrumb-item a:hover {
+  color: $color_secondary;
+}
+.breadcrumb-box .breadcrumb .breadcrumb-item.active {
+  color: $color_secondary;
+}

@@ -1,0 +1,298 @@
+.rtcl {
+  .homfinder-listing-form {
+    select {
+      background-position:
+              calc(100% - 20px) calc(1em + 3px),
+              calc(100% - 15px) calc(1em + 3px),
+              calc(100% - .5em) .5em;
+
+      &:focus {
+        background-position:
+                calc(100% - 15px) calc(1em),
+                calc(100% - 20px) calc(1em),
+                calc(100% - .5em) .5em;
+      }
+    }
+    .rtcl-post-section-title {
+      margin-top: 20px;
+      h3 {
+        color: #222222;
+        font-size: 18px;
+        font-weight: 600;
+        &::before {
+          background-color: #e1e1e1;
+        }
+      }
+    }
+    .col-form-label {
+      text-align: left;
+      font-weight: 600;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      & > label {
+        font-weight: 600;
+      }
+      .form-control {
+        height: 42px;
+      }
+      .form-check-input[type="radio"] {
+        position: static;
+        height: auto;
+        margin-top: 0;
+        margin-left: 0;
+        & + .form-check-label {
+          padding-left: 15px;
+          &::before {
+            display: none;
+          }
+        }
+      }
+      .rtcl-check-list {
+        display: grid;
+        column-gap: 30px;
+        grid-auto-columns: max-content;
+        grid-template-areas: 'a a a';
+
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+
+        .form-check {
+          line-height: 26px;
+        }
+      }
+    }
+    .rtcl-submit-btn {
+      padding: 12px 18px;
+      font-weight: 500;
+      margin-top: 20px;
+      border-radius: $border_radius;
+
+      &:hover {
+        background-color: $color_secondary;
+        border-color: $color_secondary;
+      }
+    }
+    .rtcl-yelp-review-category {
+      .main-label {
+        margin-bottom: 0;
+      }
+    }
+    #rtcl-ad-type-selection {
+      .form-group {
+        margin-bottom: 0;
+      }
+    }
+    .rn-recipe-actions {
+      .add-ingredient {
+          &:hover {
+            background-color: $color_secondary;
+            color: #fff;
+          }
+      }
+    }
+    #rtcl-pricing-wrap {
+      .rtcl-listing-pricing-type {
+        margin-right: 25px;
+      }
+      .price-wrap {
+        .price-label {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .rtcl-membership-promotions-form-wrap {
+    .form-check {
+      input[type="checkbox"] {
+        top: 17px;
+        left: 11px;
+      }
+    }
+  }
+}
+
+.rtcl-membership-promotion-actions {
+  .btn:hover {
+    background-color: $color_secondary !important;
+    border-color: $color_secondary !important;
+    color: #fff; 
+  }
+}
+.rtcl-submit-btn-wrap {
+  .btn:hover {
+    background-color: $color_secondary !important;
+    border-color: $color_secondary !important;
+    color: #fff; 
+  }
+}
+.rtcl .rtcl-promotions-heading.active:before {
+  color: $color_secondary;
+}
+.rtcl-payment-receipt {
+  .btn:hover {
+      background-color: $color_secondary !important;
+      border-color: $color_secondary !important;
+      color: #fff; 
+  }
+}
+
+/*Floor Plan*/
+.rn-recipe-wrapper .btn-sm {
+  color: #ffffff;
+}
+.rn-recipe-item {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px 10px;
+  background: #eeeeee;
+  margin-bottom: 15px;
+  position: relative;
+}
+.rn-recipe-wrapper .rn-remove {
+  color: red;
+  cursor: pointer;
+}
+.rn-recipe-item > .rn-remove {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+.rn-recipe-item .rn-recipe-title {
+  padding: 0 35px 15px;
+  border-bottom: 1px dashed;
+  margin-bottom: 15px;
+}
+.rn-recipe-item .rn-recipe-title textarea {
+  margin-top: 15px;
+}
+.rn-recipe-item .rn-ingredient-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+.rn-ingredient-item .item-sort,
+.rn-ingredient-item .rn-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+}
+.rn-ingredient-item {
+  display: flex;
+}
+.rn-ingredient-item + .rn-ingredient-item {
+  margin-top: 15px;
+}
+.rn-ingredient-fields {
+  display: flex;
+  flex: 1;
+}
+.rn-ingredient-fields input + input {
+  margin-left: 10px;
+}
+.floor-image-wrap {
+  padding: 15px 0 20px 35px;
+}
+.floor-image-wrap .floor-image .remove-floor-image span {
+  cursor: pointer;
+  font-size: 14px;
+  background-color: red;
+  color: #ffffff;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.rtcl-post-panorama {
+  .panorama-image {
+    position: relative;
+    .remove-panorama-image {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      display: none;
+      a {
+        background-color: red;
+        padding: 3px 5px;
+        font-size: 14px;
+        line-height: 100%;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: $color_primary;
+        }
+        i {
+          color: #ffffff;
+          &:before {
+            margin: 0;
+            width: auto;
+          }
+        }
+      }
+    }
+    &:hover {
+      .remove-panorama-image {
+        display: inline-block;
+      }
+    }
+  }
+}
+.rn-recipe-actions a {
+  background-color: $color_primary;
+  padding: 8px 15px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .rn-ingredient-fields {
+    display: block;
+  }
+  .rn-ingredient-fields input + input {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .rn-ingredient-item .item-sort,
+  .rn-ingredient-item .rn-remove {
+    align-items: start;
+  }
+}
+
+/*business hour*/
+
+.rtcl-post-bhs {
+  #rtcl-bhs-holder {
+    .form-check {
+      label {
+        padding-left: 10px;
+        &::before {
+          content: none;
+        }
+      }
+    }
+    .rtcl-bhs {
+      .rtcl-bhs-btn.rtcl-icon-plus {
+        background-color: $color_primary;
+      }
+      input.bhs-datepicker,
+      input.bhs-timepicker {
+        border: 1px solid #e1e1e1;
+        background-color: #ffffff;
+        border-radius: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        &:focus {
+          border-color: #e1e1e1;
+          outline: none;
+        }
+      }
+      .time-slot {
+        &:first-child {
+          .time-slot-action {
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}

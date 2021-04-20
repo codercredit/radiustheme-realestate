@@ -1,0 +1,89 @@
+/*------------------- 4.5 Pagination -------------------*/
+.pagination-number {
+	text-align: center;
+	margin-top: 20px;
+	display: inline-block;
+	width: 100%;
+	ul {
+		display: flex;
+		justify-content: center;
+		li {
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-right: 5px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				font-size: 20px;
+				color: #717171;
+				font-weight: 700;	
+				padding: 9px 19px;
+				border: 1px solid #c2c2c2;
+				border-radius: $border_radius;
+				&:hover {
+					background-color: $color_primary;
+					border-color: $color_primary;
+					color: $color_light;
+				}
+			}
+			&.active {
+				a {
+					background-color: $color_primary;
+					border-color: $color_primary;
+					color: $color_light;
+				}
+			}
+		}
+	}
+}
+.rtcl {
+	nav.rtcl-pagination {
+		text-align: center;
+		clear: both;
+		padding-top: 20px;
+		ul.page-numbers {
+			display: flex;
+			justify-content: center;
+			border: none;
+			margin: 0;
+			li {
+				display: inline-block;
+				margin-bottom: 10px;
+				margin-right: 5px;
+				border: none;
+				&:last-child {
+					margin-right: 0;
+				}
+				a.page-numbers {
+					font-size: 20px;
+					color: #717171;
+					font-weight: 700;
+					padding: 9px 19px;
+					line-height: 30px;
+					border: 1px solid #c2c2c2;
+					border-radius: $border_radius;
+					background-color: #f8f8f8;
+					&:hover {
+						background-color: $color_primary;
+						border-color: $color_primary;
+						color: $color_light;
+					}
+				}
+				span.page-numbers.current {
+					font-size: 20px;
+					font-weight: 700;
+					padding: 9px 19px;
+					line-height: 30px;
+					border: 1px solid $color_primary;
+					border-radius: $border_radius;
+					background-color: $color_primary;
+					color: $color_light;
+				}
+			}
+		}
+		@media screen and (max-width: 991px) {
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+/*---------------------------------------------
+===================
+CSS INDEX
+===================
+1. Typography
+2. Bootstrap Overwrite
+    2.1 Grid
+3. Vendor Custom Style
+    3.1 Owl Carousel Nav
+4. Template Layout Style
+    4.2 Footer
+    4.3 Global
+    4.4 Header Menu
+    4.5 Pagination
+    4.6 Section
+5. Template Page Style
+
+--------------------------------------------*/
+@import "generate/_variables.scss";
+@import "generate/_mixins.scss";
+@import "generate/spacing";
+// Responsive
+@import "./generate/media_queries";
+/*=======================================================================
+1. Typography
+=========================================================================*/
+@import "template-layout/_typography.scss";
+/*=======================================================================
+2. Bootstrap Overwrite
+=========================================================================*/
+@import "vendor-custom/bootstrap/_form.scss";
+@import "vendor-custom/bootstrap/_grid.scss";
+/*=======================================================================
+3. Vendor Custom Style
+=========================================================================*/
+@import "vendor-custom/countdown/_countdown.scss";
+@import "vendor-custom/slick/_slick.scss";
+@import "vendor-custom/select-2/_select_2.scss";
+@import "vendor-custom/ion-slider/_ion_slider.scss";
+@import "vendor-custom/nivo-slider/_nivo-slider.scss";
+/*=======================================================================
+4. Template Layout Style
+=========================================================================*/
+@import "template-layout/back_to_top.scss";
+@import "template-layout/_breadcrumbs.scss";
+@import "template-layout/_footer.scss";
+@import "template-layout/_global.scss";
+@import "template-layout/_header_menu.scss";
+@import "template-layout/_pagination.scss";
+@import "template-layout/_preloader.scss";
+@import "template-layout/_section.scss";
+@import "template-layout/_widget.scss";
+/*=======================================================================
+5. Template Page Style
+=========================================================================*/
+@import "template-section/_404.scss";
+@import "template-section/_advanced_search.scss";
+@import "template-section/_about.scss";
+@import "template-section/_agency.scss";
+@import "template-section/_agent.scss";
+@import "template-section/_banner.scss";
+@import "template-section/_blog.scss";
+@import "template-section/_brand.scss";
+@import "template-section/_category.scss";
+@import "template-section/_contact.scss";
+@import "template-section/_product.scss";
+@import "template-section/_team.scss";
+@import "template-section/_testimonial.scss";
+@import "template-section/_why_choose.scss";
+@import "template-section/who_we_area";
+@import "template-section/featured";
+@import "template-section/tab";
+@import "template-section/chose";
+
+/*========================
+Elementor
+========================*/
+@import "template-section/elementor";

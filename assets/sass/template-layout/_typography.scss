@@ -1,0 +1,123 @@
+
+body {
+    font-family: $font_body;
+    font-size: 16px;
+    line-height: 30px;
+    color: $color_body;
+    font-weight: 400;
+    height: 100%;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #ffffff;
+}
+
+p {
+    margin: 0 0 10px 0;
+    color: $color_body;
+}
+
+h1,
+.rtcl h1,
+h2,
+.rtcl h2,
+h3,
+.rtcl h3,
+h4,
+.rtcl h4,
+h5,
+.rtcl h5,
+h6,
+.rtcl h6 {
+    font-family: $font_primary;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    line-height: 30px;
+    color: $color_black;
+}
+
+h1,
+.rtcl h1 {
+    font-size: 46px;
+    line-height: 52px;
+    @media only screen and (max-width: 1199px) {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    @media only screen and (max-width: 991px) {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    @media only screen and (max-width: 767px) {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    @media only screen and (max-width: 575px) {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+h2,
+.rtcl h2 {
+    font-size: 30px;
+    line-height: 40px;
+    @media only screen and (max-width: 1199px) {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    @media only screen and (max-width: 991px) {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    @media only screen and (max-width: 767px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @media only screen and (max-width: 575px) {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+h3,
+.rtcl h3 {
+    font-size: 28px;
+    line-height: 38px;
+    @media only screen and (max-width: 575px) {
+        font-size: 20px;
+    }
+}
+
+h4,
+.rtcl h4 {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+h5,
+.rtcl h5 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+h6,
+.rtcl h6 {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+// margin padding
+.mb-30 {
+    margin-bottom: 30px;
+}
+.pxy-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+// Color
+.grey-bg {
+    background: $color_grey;
+}

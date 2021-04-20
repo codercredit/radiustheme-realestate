@@ -1,0 +1,223 @@
+.who-we-area-video {
+  display: inline-block;
+  margin-left: 55px;
+  z-index: 1;
+
+  @include respond-between(xs, md) {
+    margin-bottom: 50px;
+  }
+
+  @include respond-below(xs) {
+    margin-left: 0px;
+  }
+  @include respond-below(sm) {
+    margin-left: 0px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: $color_primary;
+    clip-path: polygon(0 0, 67% 0, 100% 100%, 0 100%);
+    width: 407px;
+    height: 517px;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -70px;
+    // visibility: hidden;
+    // opacity: 0;
+    @include transition();
+    @include respond-below(xs) {
+      display: none;
+    }
+    @include respond-below(sm) {
+      display: none;
+    }
+  }
+}
+
+.video-link {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  background: $color_light;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 50%;
+  color: $color_secondary;
+  box-shadow: 0px 27px 57px 0px rgba(0, 0, 0, 0.41);
+  @include transition();
+
+  &:hover {
+    background: $color_secondary;
+    color: $color_light;
+  }
+
+  & i {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+
+    &::before {
+      font-size: 20px;
+    }
+  }
+}
+
+.who-we-area-content {
+  padding-right: 20px;
+}
+
+.who-we-area-list {
+  padding-top: 5px;
+  margin-bottom: 35px;
+
+  ul {
+    li {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      font-family: $font_primary;
+
+      & i {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: $color_primary;
+        line-height: 1;
+
+        &::before {
+          font-size: 20px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.who-we-are-shape {
+  position: absolute;
+  top: -96px;
+  left: -27px;
+  z-index: 2;
+}
+
+.who-we-are-shape-4 {
+  @include absolute-right-bottom();
+}
+.who-we-are-shape-7 {
+  @include absolute-left-bottom();
+}
+
+.who-we-are-shape-3 {
+  position: absolute;
+  bottom: -17px;
+  left: -28px;
+}
+
+.who-we-are-padding {
+  padding-top: 200px;
+  padding-bottom: 125px;
+  @include respond-between(md, lg) {
+    padding-top: 125px;
+    padding-bottom: 70px;
+  }
+  @include respond-between(md, lg) {
+    padding-top: 125px;
+    padding-bottom: 70px;
+  }
+  @include respond-below(xs) {
+    padding-bottom: 70px;
+  }
+}
+
+.video-two {
+  margin-left: 0;
+  &::before {
+    display: none;
+  }
+  .circle-shape {
+    width: 216px;
+    height: 216px;
+    background: $color_secondary;
+    left: -60px;
+    bottom: -45px;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes scale-upOne {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+}
+@keyframes scale-upOne {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.who-we-area-content-two {
+  padding-right: 95px;
+  @include respond-below(xs) {
+    padding-right: 0;
+  }
+}
+img.who-we-are-shape-two {
+  position: absolute;
+  top: -43px;
+  right: -25px;
+}

@@ -1,0 +1,25 @@
+.related-product {
+  .heading-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .product-box {
+    .product-content {
+      .entry-meta {
+        padding-bottom: 14px;
+        margin-bottom: 0;
+        li.author {
+          display: none;
+        }
+      }
+    }
+    .product-bottom-content {
+      .media {
+        .item-title {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

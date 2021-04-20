@@ -1,0 +1,289 @@
+.homfinder-myaccount {
+    background-color: #f8f8f8;
+    .rtcl {
+        .rtcl-MyAccount-navigation {
+            & > h4 {
+                padding: 20px 20px 10px 30px;
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            border-radius: $border_radius;
+            -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            color: #646464;
+            border: none;
+            ul {
+                padding-left: 0;
+                li {
+                    display: block;
+                    padding: 0 20px;
+                    margin: 0;
+                    border-bottom: 1px solid #cccccc;
+                    position: relative;
+                    transition: all 0.3s ease-in-out;
+                    a {
+                        padding: 10px 0 10px 30px;
+                        display: block;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #646464;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:before {
+                        content: "\f105";
+                        font-family: "Font Awesome 5 Free";
+                        color: $color_primary;
+                        position: absolute;
+                        left: 30px;
+                        top: 15px;
+                        line-height: 18px;
+                        font-weight: 600;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &.is-active,
+                    &:hover {
+                        background-color: $color_primary;
+                        a {
+                            color: #fff;
+                        }
+                        &:before {
+                            color: #fff;
+                        }
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+        .rtcl-MyAccount-content {
+            .dashboard-content,
+            #rtcl-user-chat-wrap,
+            .rtcl-store-settings,
+            .rtcl-payment-history-wrap,
+            .rtcl-EditAccountForm {
+                background-color: #ffffff;
+                padding: 30px;
+                @media only screen and (max-width: 479px) {
+                    padding: 15px;                     
+                }
+            }
+            .listing-archive-noresult {
+                font-size: 18px;
+                line-height: 1.5;
+                color: #222;
+                text-align: center;
+                background-color: #fff;
+                padding: 25px;
+                border-radius: $border_radius;
+            }
+            .rtcl-listings {
+                margin-bottom: 0;
+                .rtcl-list-view {
+                    .product-box {
+                        border-radius: $border_radius;
+                        flex-wrap: wrap;
+                        .product-thumb {
+                            .rtcl-listing-badge-wrap {
+                                display: inline-block;
+                                margin: 0;
+                            }
+
+                            @media only screen and (max-width: 991px) {
+                                max-width: none;
+                                max-height: 230px;
+                            }
+                        }
+                        .product-content {
+                            @media only screen and (max-width: 1199px) {
+                                padding: 20px 15px 20px 20px;
+                            }
+                            .entry-meta {
+                                margin-bottom: 10px;
+                                padding-left: 0;
+                                li {
+                                    display: inline-block;
+                                    margin-right: 15px;
+                                    &:last-child {
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .product-expired-status {
+                            margin-bottom: 10px;
+                            p {
+                                display: inline-block;
+                                margin: 0 15px 0 0;
+                            }
+                        }
+                        .rtcl-actions {
+                            text-align: left;
+                            .manage-listing-btn {
+                                flex-wrap: wrap;
+                            }
+                            a.btn {
+                                border: none;
+                                border-radius: $border_radius;
+                                font-weight: 500;
+                                color: #ffffff;
+                                padding: 8px 15px;
+                                background-color: $color_primary;
+                                transition: all 0.3s ease-in-out;
+                                margin-right: 5px;
+                                margin-bottom: 5px;
+                                white-space: nowrap;
+                                flex: 1;
+                                
+                                &:hover {
+                                    background-color: $color_secondary;
+                                    color: #ffffff;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                nav {
+                    margin: 50px 0 0 !important;
+                    ul.pagination {
+                        border: none;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        li.page-item {
+                            margin-right: 5px;
+                            border: none;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            a.page-link {
+                                font-size: 20px;
+                                color: #717171;
+                                font-weight: 700;
+                                padding: 9px 19px;
+                                line-height: 30px;
+                                border: 1px solid #c2c2c2;
+                                border-radius: $border_radius;
+                                background-color: #f8f8f8;
+                                &:hover {
+                                    background-color: $color_primary;
+                                    border-color: $color_primary;
+                                    color: $color_light;
+                                }
+                            }
+                            span.page-link {
+                                font-size: 20px;
+                                font-weight: 700;
+                                padding: 9px 19px;
+                                line-height: 30px;
+                                border: 1px solid $color_primary;
+                                border-radius: $border_radius;
+                                background-color: $color_primary;
+                                color: $color_light;
+                            }
+                        }
+                    }
+                }
+            }
+            .rtcl-EditAccountForm,
+            .rtcl-store-settings {
+                input[type='submit'] {
+                    margin-top: 30px;
+                    transition: all 0.3s ease-in-out;
+                    font-weight: 500;
+                    border-radius: 4px;
+
+                    &:hover {
+                        background-color: $color_secondary;
+                    }
+                }
+            }
+            .rtcl-favourite-listings {
+                .rtcl-actions {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.rtcl .membership-statistic-report-wrap .reports .report-item {
+    @media only screen and (max-width: 479px) {
+        grid-template-columns: 110px auto;                  
+    }
+}
+
+#rtcl-user-login-wrapper {
+    background-color: #ffffff;
+    padding: 20px 15px 15px;
+    .rtcl-login-form-wrap,
+    .rtcl-registration-form-wrap {
+        max-width: 100%;
+        h2 {
+            font-size: 1.5rem;
+        }
+        .form-check {
+            padding-left: 40px;
+        }
+        .btn {
+            padding: 15px 20px;
+            height: auto;
+            line-height: 1;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 4px;
+            &:hover {
+                background-color: $color_secondary;
+                border-color: $color_secondary;
+            }
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.rtcl {
+    .rtcl-pricing-options {
+        .form-check-label {
+            display: initial;
+        }
+    }
+    #rtcl-payment-methods {
+        .rtcl-payment-method {
+            padding: 8px 15px;
+            > label {
+                display: initial;
+            }
+        }
+        ul {
+            padding: 0;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .rtcl-responsive-table {
+            td:before {
+                width: 185px;
+            }
+        }
+        .rtcl-submit-btn-wrap {
+            .btn {
+                margin: 5px 0;
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .rtcl-responsive-table {
+            td:before {
+                width: 115px;
+            }
+        }
+    }
+    .btn {
+        border-radius: 0;
+    }
+}

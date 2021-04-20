@@ -1,0 +1,66 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 16/06/2020 06:41
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-bed:before { content: "\f100"; }
+.flaticon-bath:before { content: "\f101"; }
+.flaticon-ruler:before { content: "\f102"; }
+.flaticon-garage:before { content: "\f103"; }
+.flaticon-tax:before { content: "\f104"; }
+.flaticon-real-estate:before { content: "\f105"; }
+.flaticon-financial:before { content: "\f106"; }
+.flaticon-plant:before { content: "\f107"; }
+.flaticon-store:before { content: "\f108"; }
+.flaticon-work-space:before { content: "\f109"; }
+.flaticon-office-building:before { content: "\f10a"; }
+.flaticon-villa:before { content: "\f10b"; }
+.flaticon-hotel:before { content: "\f10c"; }
+    
+    $font-Flaticon-bed: "\f100";
+    $font-Flaticon-bath: "\f101";
+    $font-Flaticon-ruler: "\f102";
+    $font-Flaticon-garage: "\f103";
+    $font-Flaticon-tax: "\f104";
+    $font-Flaticon-real-estate: "\f105";
+    $font-Flaticon-financial: "\f106";
+    $font-Flaticon-plant: "\f107";
+    $font-Flaticon-store: "\f108";
+    $font-Flaticon-work-space: "\f109";
+    $font-Flaticon-office-building: "\f10a";
+    $font-Flaticon-villa: "\f10b";
+    $font-Flaticon-hotel: "\f10c";

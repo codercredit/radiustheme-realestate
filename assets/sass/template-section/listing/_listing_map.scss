@@ -1,0 +1,135 @@
+.homfinder-listing-map-wrapper {
+  .rtcl-listings-wrapper {
+    padding: 50px 50px 70px;
+    @media screen and (max-width: 1199px) {
+      padding: 50px 20px 70px;
+    }
+    .listing-grid-box {
+      padding: 0;
+      .search-box {
+        .search-type {
+          .search-check-box {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+        }
+        .search-keyword {
+          .form-control {
+            border: none;
+          }
+        }
+      }
+      .advanced-search-box {
+        top: -50px;
+        &:before {
+          top: auto;
+          bottom: -10px;
+          transform: rotate(180deg);
+        }
+        &.show {
+          top: -30px;
+        }
+      }
+    }
+    .product-box {
+      .product-thumb {
+        .slick-slide {
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .homfinder-listing-map-wrapper {
+    .rtcl-listings-wrapper {
+      .listing-grid-box {
+        .advanced-search-box {
+          &.show {
+            top: 15px;
+          }
+          .advanced-box {
+            .form-check {
+              flex: 0 0 50%;
+              max-width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .homfinder-listing-map-wrapper {
+    .rtcl-listings-sc-wrapper.has-map {
+      flex-wrap: wrap;
+
+      .rtcl-listings-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        .listing-grid-box {
+          .advance-search-form {
+            .search-box {
+              align-items: start;
+              > .search-item:nth-child(4n),
+              > .search-item.search-btn {
+                margin-top: 0;
+              }
+              .search-item {
+                .price-range {
+                  margin: -6px 0 40px;
+                }
+              }
+            }
+          }
+        }
+
+        .rtcl-search-map {
+          order: 1;
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .homfinder-listing-map-wrapper {
+    .rtcl-listings-sc-wrapper.has-map {
+      .rtcl-listings-wrapper {
+        .listing-grid-box {
+          .advance-search-form {
+            .search-box {
+              .search-item {
+                .price-range {
+                  margin: 0 0 50px;
+                }
+              }
+            }
+            .advanced-search-box {
+              top: auto;
+              bottom: 150px;
+              &.show {
+                top: auto;
+                bottom: 130px;
+              }
+            }
+          }
+        }
+
+        .rtcl-search-map {
+          order: 1;
+        }
+
+      }
+    }
+  }
+}

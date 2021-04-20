@@ -1,0 +1,174 @@
+/*------------------- 2.1 Form -------------------*/
+.form-group {
+    position: relative;
+    margin-bottom: 10px;
+    .form-control {
+        color: #111111;
+        /*
+        padding: 20px;
+        border: none;
+         */
+        background-color: #ffffff;
+        border-radius: $border_radius;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    input {
+        height: 50px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .submit-btn {
+        width: 100%;
+        border: none;
+        border-radius: $border_radius;
+        font-weight: 500;
+        color: $color_light;
+        padding: 12px 35px 10px;
+        background-color: $color_primary;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: $color_secondary;
+            color: $color_light;
+        }
+    }
+
+    input.form-control::-webkit-input-placeholder,
+    textarea.form-control::-webkit-input-placeholder {
+        color: #646464;
+    }
+}
+
+.input-group {
+    border-radius: $border_radius;
+    background-color: $color_light;
+    border: 1px solid rgba(0,0,0,0.125);
+    .form-control {
+        height: 50px;
+        color: $color_dark;
+    }
+    .input-group-append {
+        margin-right: 5px;
+        .item-btn {
+            border: none;
+            background-color: transparent;
+            color: $color_body;
+            padding: 5px 10px;
+            transition: all 0.3s ease-in-out;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                color: $color_secondary;
+            }
+        }
+    }
+    input.form-control::-webkit-input-placeholder,
+    textarea.form-control::-webkit-input-placeholder {
+        color: #646464;
+    }
+}
+
+.form-check {
+    position: relative;
+    padding-left: 0;
+}
+
+.form-check label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #646464;
+    cursor: pointer;
+    i {
+        color: #ffbc09;
+        margin-right: 4px;
+    }
+}
+
+.form-check label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 5px;
+    background-color: transparent;
+    border: 2px solid #b1b0b0;
+    border-radius: $border_radius;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.form-check label:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    top: 0;
+   font-size: 12px;
+
+}
+
+.form-check input[type="checkbox"] {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: 20px;
+    z-index: 1;
+    opacity: 0;
+    margin-top: 0;
+}
+
+.form-check input[type="checkbox"]:checked+label {
+    color: $color_black;
+}
+.form-check input[type="checkbox"]:checked+label:after {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f00c";
+    font-weight: 600;
+}
+
+.form-check input[type="checkbox"]:disabled+label {
+    opacity: 0.65;
+}
+
+.form-check input[type="checkbox"]:disabled+label:before {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
+
+.form-check label::before {
+    border-radius: $border_radius;
+}
+
+.form-check input[type="checkbox"]:checked+label:before {
+    background-color: $color_primary;
+    border-color: $color_primary;
+}
+
+.form-check input[type="checkbox"]:checked+label:after {
+    color: $color_light;
+}
+
+.form-check {
+    input[type="radio"] {
+        height: auto;
+        + label {
+            padding-left: 10px;
+            position: relative;
+            top: -1px;
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

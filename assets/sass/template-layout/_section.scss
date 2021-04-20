@@ -1,0 +1,84 @@
+/*------------------- 4.6 Section -------------------*/
+section.section,
+.section {
+  padding: 118px 0 90px;
+
+  @media only screen and (max-width: 991px) {
+    padding: 78px 0 50px;
+  }
+}
+
+.ptb-100 {
+  padding: 100px 0;
+}
+
+.section-header {
+  .title-small {
+    padding-right: 38px;
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: $font_primary;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 4px;
+      width: 23px;
+      background: $color_primary;
+      border-radius: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+  }
+
+  .title-main {
+    font-weight: 700;
+  }
+
+  .line-none {
+    padding-right: 0;
+    &::after {
+      display: none;
+    }
+  }
+  .title-paragraph {
+    br {
+      @include respond-below(md) {
+        display: none;
+      }
+    }
+  }
+}
+
+.section-header-2 {
+  .title-small {
+    padding-right: 0;
+    color: $color_primary;
+    &::after {
+      display: none;
+    }
+  }
+  .title-main {
+    margin-bottom: 0;
+    @include respond-below(lg) {
+      font-size: 30px;
+    }
+  }
+  .section-shape {
+    max-width: 108px;
+    max-height: 14px;
+    margin-top: -3px;
+    .section-shape-path {
+      fill-rule: evenodd;
+      fill: $color_secondary;
+    }
+  }
+  .section-shape-white {
+    .section-shape-path {
+      fill: $color_light;
+    }
+  }
+}

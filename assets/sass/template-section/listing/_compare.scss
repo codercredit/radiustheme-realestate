@@ -1,0 +1,68 @@
+#rtcl-compare-wrap {
+  h5.rtcl-compare-wrap-title {
+    font-size: 20px;
+    color: $color_black;
+    font-weight: 600;
+  }
+  .rtcl-compare-item {
+    padding: 10px 20px;
+    h4.rtcl-compare-item-title {
+      a {
+        line-height: 20px;
+        &:hover {
+          color: $color_primary;
+        }
+      }
+    }
+    .rtcl-compare-remove-wrap {
+      align-items: start;
+      a {
+        margin-left: 10px;
+        &:hover {
+          i {
+            color: red !important;
+          }
+        }
+      }
+    }
+  }
+}
+.rtcl-compare-table {
+  border: none;
+  thead {
+    th {
+      border-color: #e1e1e1;
+    }
+    tr {
+      border: none;
+    }
+    th:first-child {
+      border-top: none;
+      border-left: none;
+    }
+  }
+  tr {
+    border-color: #e1e1e1;
+  }
+  .rtcl-compare-table-item {
+    th, td {
+      border-color: #e1e1e1;
+    }
+  }
+  .rtcl-compare-table-title {
+    h3 {
+      line-height: 26px;
+      a {
+        color: $color_black;
+        font-weight: 600;
+        &:hover {
+          color: $color_primary;
+        }
+      }
+    }
+  }
+  .rtcl-compare-table-label {
+    color: $color_black;
+    font-weight: 600;
+  }
+}

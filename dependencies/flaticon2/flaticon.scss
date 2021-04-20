@@ -1,0 +1,189 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?f83840d2c2280ed5f9268b3faa3679cc") format("truetype"),
+url("./flaticon.woff?f83840d2c2280ed5f9268b3faa3679cc") format("woff"),
+url("./flaticon.woff2?f83840d2c2280ed5f9268b3faa3679cc") format("woff2"),
+url("./flaticon.eot?f83840d2c2280ed5f9268b3faa3679cc#iefix") format("embedded-opentype"),
+url("./flaticon.svg?f83840d2c2280ed5f9268b3faa3679cc#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "bathtub": "\f101",
+    "bed-1": "\f102",
+    "bed": "\f103",
+    "building": "\f104",
+    "buildings": "\f105",
+    "calendar": "\f106",
+    "call": "\f107",
+    "camera": "\f108",
+    "chat-1": "\f109",
+    "chat": "\f10a",
+    "check-1": "\f10b",
+    "check": "\f10c",
+    "clock": "\f10d",
+    "envelope": "\f10e",
+    "file": "\f10f",
+    "garage": "\f110",
+    "heart": "\f111",
+    "home-1": "\f112",
+    "home": "\f113",
+    "house-plan": "\f114",
+    "left-and-right-arrows": "\f115",
+    "maps-and-flags": "\f116",
+    "next-1": "\f117",
+    "next": "\f118",
+    "office-1": "\f119",
+    "office": "\f11a",
+    "phone-call": "\f11b",
+    "pin": "\f11c",
+    "plan": "\f11d",
+    "right-arrow-1": "\f11e",
+    "right-arrow": "\f11f",
+    "share-1": "\f120",
+    "share": "\f121",
+    "shower": "\f122",
+    "speech-bubble": "\f123",
+    "user-1": "\f124",
+    "user": "\f125",
+    "video-camera": "\f126",
+    "video-player": "\f127",
+    "villa": "\f128",
+    "visibility": "\f129",
+);
+
+.flaticon-bathtub:before {
+    content: map-get($flaticon-map, "bathtub");
+}
+.flaticon-bed-1:before {
+    content: map-get($flaticon-map, "bed-1");
+}
+.flaticon-bed:before {
+    content: map-get($flaticon-map, "bed");
+}
+.flaticon-building:before {
+    content: map-get($flaticon-map, "building");
+}
+.flaticon-buildings:before {
+    content: map-get($flaticon-map, "buildings");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-camera:before {
+    content: map-get($flaticon-map, "camera");
+}
+.flaticon-chat-1:before {
+    content: map-get($flaticon-map, "chat-1");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon-map, "chat");
+}
+.flaticon-check-1:before {
+    content: map-get($flaticon-map, "check-1");
+}
+.flaticon-check:before {
+    content: map-get($flaticon-map, "check");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-file:before {
+    content: map-get($flaticon-map, "file");
+}
+.flaticon-garage:before {
+    content: map-get($flaticon-map, "garage");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-home-1:before {
+    content: map-get($flaticon-map, "home-1");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-house-plan:before {
+    content: map-get($flaticon-map, "house-plan");
+}
+.flaticon-left-and-right-arrows:before {
+    content: map-get($flaticon-map, "left-and-right-arrows");
+}
+.flaticon-maps-and-flags:before {
+    content: map-get($flaticon-map, "maps-and-flags");
+}
+.flaticon-next-1:before {
+    content: map-get($flaticon-map, "next-1");
+}
+.flaticon-next:before {
+    content: map-get($flaticon-map, "next");
+}
+.flaticon-office-1:before {
+    content: map-get($flaticon-map, "office-1");
+}
+.flaticon-office:before {
+    content: map-get($flaticon-map, "office");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
+.flaticon-plan:before {
+    content: map-get($flaticon-map, "plan");
+}
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon-map, "right-arrow-1");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-share-1:before {
+    content: map-get($flaticon-map, "share-1");
+}
+.flaticon-share:before {
+    content: map-get($flaticon-map, "share");
+}
+.flaticon-shower:before {
+    content: map-get($flaticon-map, "shower");
+}
+.flaticon-speech-bubble:before {
+    content: map-get($flaticon-map, "speech-bubble");
+}
+.flaticon-user-1:before {
+    content: map-get($flaticon-map, "user-1");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-video-camera:before {
+    content: map-get($flaticon-map, "video-camera");
+}
+.flaticon-video-player:before {
+    content: map-get($flaticon-map, "video-player");
+}
+.flaticon-villa:before {
+    content: map-get($flaticon-map, "villa");
+}
+.flaticon-visibility:before {
+    content: map-get($flaticon-map, "visibility");
+}

@@ -1,0 +1,73 @@
+.tab-property-nav {
+  .nav-tabs {
+    justify-content: center;
+    border-bottom: 1px solid transparent;
+    margin-top: -83px;
+    @include respond-between(xs, lg) {
+      margin-top: -52px;
+    }
+
+    .nav-item {
+      .nav-link {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0;
+        line-height: 1.7;
+        border: 1px solid transparent;
+        padding: 22px 84px;
+        background: rgba(51, 51, 51, 0.9);
+        border-radius: 0;
+        color: #fff;
+        margin: 3px 3px;
+        @include respond-between(xs, lg) {
+          font-size: 16px;
+          padding: 10px 15px;
+        }
+        @include respond-below(xs) {
+          font-size: 16px;
+          padding: 10px 15px;
+        }
+      }
+
+      .nav-link.active {
+        background: $color_primary;
+        color: $color_light;
+      }
+    }
+  }
+}
+
+.property-tab-img {
+  min-height: 641px;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.14);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+h1.property-title {
+  font-size: 120px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 0;
+  transform: translateY(-50%);
+  font-family: "Quentin";
+}

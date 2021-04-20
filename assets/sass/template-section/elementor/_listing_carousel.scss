@@ -1,0 +1,56 @@
+.rt-listing-slider {
+  .product-box {
+    .product-price {
+      .rtcl-price-type-label {
+        display: none;
+      }
+    }
+  }
+  .slick-slide {
+    margin: 0 15px;
+    .product-box {
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .slick-list {
+    margin: 0 -15px;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+    width: 100%;
+
+    li {
+      height: 9px;
+      width: 9px;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+
+      button {
+        background-color: #cccccc;
+        height: 9px;
+        width: 9px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    li.slick-active {
+      height: 16px;
+      width: 16px;
+
+      button {
+        height: 16px;
+        width: 16px;
+        background-color: $color_primary;
+      }
+    }
+  }
+}

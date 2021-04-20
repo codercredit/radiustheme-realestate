@@ -1,0 +1,32 @@
+/*------------------- 4.5 Inner Banner -------------------*/
+.breadcrumbs-banner {
+    padding: 50px 0;
+    background-color: $color_primary;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    overflow: hidden;
+
+    .rtcl-breadcrumb {
+        position: relative;
+        z-index: 1;
+        color: #e3dddd;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0;
+        a {
+            color: inherit;
+            margin: 0 10px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $color_light;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        span {
+            color: $color_light;
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,228 @@
+/*------------------- 5.1 Banner -------------------*/
+.hero-banner {
+  padding: 100px 0 !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  height: calc(100vh - 310px) !important;
+  display: flex;
+  align-items: center;
+  overflow: visible !important;
+
+  &:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .banner-box {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    .item-title {
+      font-weight: 700;
+      color: $color_light;
+      margin-bottom: 22px;
+      transition: all 0.3s ease-in-out;
+
+      @media only screen and (max-width: 767px) {
+        line-height: 40px;
+        font-size: 30px;
+      }
+    }
+
+    .item-subtitle {
+      font-size: 18px;
+      font-weight: 500;
+      color: #e5e5e5;
+      margin-bottom: 40px;
+
+      @media only screen and (max-width: 991px) {
+        margin-bottom: 0;
+      }
+    }
+
+    .advance-search-form {
+      @media only screen and (max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.fluentform {
+  .fluent_form_2 {
+    background-color: rgba(26, 124, 250, 0.7);
+    border-radius: $border_radius;
+    padding: 35px 40px 30px;
+
+    .ff-el-group {
+      margin-bottom: 10px;
+
+      h2 {
+        font-size: 30px;
+        line-height: 36px;
+        color: $color_light;
+      }
+
+      > p {
+        color: $color_light;
+      }
+
+      input {
+        height: 45px;
+      }
+
+      .ff-el-form-control {
+        color: #111111;
+        background-color: #ffffff;
+        font-size: 16px;
+        border-radius: $border_radius;
+        border: none;
+      }
+
+      .ff-btn-submit {
+        width: auto;
+        height: auto;
+        padding: 18px 35px 18px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 500;
+        color: #111111;
+        background-color: #ffffff;
+        border-radius: $border_radius;
+        opacity: 1;
+        border: none;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $color_light;
+          color: $color_primary;
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.banner-bg {
+  background: #f2fdf7;
+}
+
+.banner-content {
+  .item-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1.4;
+    @include respond-below(md) {
+      font-size: 26px;
+    }
+  }
+
+  .banner-text {
+    font-size: 16px;
+    color: #646464;
+    font-family: $font_body;
+    margin-bottom: 0;
+  }
+}
+
+.banner-padding {
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+
+// .banner-shape {
+//     position: absolute;
+//     bottom: 0;
+// }
+
+// .banner-person {
+//     position: absolute;
+//     bottom: 0;
+// }
+
+.banner-left-box {
+  position: absolute;
+  left: 0;
+  bottom: -44px;
+  @include respond-between(xs, md) {
+    display: none;
+  }
+  @include respond-below(xs) {
+    display: none;
+  }
+
+  img {
+    vertical-align: inherit;
+  }
+}
+.hero-banner-two {
+  min-height: 811px;
+  &::after {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+.banner-box-two {
+  .banner-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: $color_light;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    display: block;
+    @include respond-below(xs) {
+      font-size: 16px;
+    }
+    @include respond-below(sm) {
+      font-size: 16px;
+    }
+  }
+  .banner-title {
+    color: $color_light;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.22;
+    position: relative;
+    padding-bottom: 17px;
+    margin-bottom: 30px;
+    @include respond-below(lg) {
+      font-size: 40px;
+    }
+    @include respond-below(xs) {
+      font-size: 22px;
+    }
+    @include respond-below(sm) {
+      font-size: 22px;
+    }
+  }
+  .banner-shape {
+    max-width: 353.09px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 0;
+    z-index: -1;
+    .banner-path {
+      fill: #fd5f00;
+      fill-rule: evenodd;
+    }
+  }
+}
+.banner-box-two {
+  padding-top: 105px;
+}
